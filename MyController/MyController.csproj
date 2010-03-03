@@ -33,8 +33,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IMyStack.cs" />
     <Compile Include="IView.cs" />
-    <Compile Include="MyController.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="MyStackIsFullExcpetion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

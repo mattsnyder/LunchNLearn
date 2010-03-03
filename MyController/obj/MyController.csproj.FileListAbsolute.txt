@@ -1,0 +1,5 @@
+C:\Development\LunchNLearn\MyController\bin\Debug\MyController.dll
+C:\Development\LunchNLearn\MyController\bin\Debug\MyController.pdb
+C:\Development\LunchNLearn\MyController\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\LunchNLearn\MyController\obj\Debug\MyController.dll
+C:\Development\LunchNLearn\MyController\obj\Debug\MyController.pdb

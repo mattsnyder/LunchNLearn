@@ -46,6 +46,12 @@
     <Content Include="lib\license.txt" />
     <Content Include="lib\Rhino.Mocks.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Stack\Stack.csproj">
+      <Project>{E82E69A7-A230-45C6-B637-A4792DD5F610}</Project>
+      <Name>Stack</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

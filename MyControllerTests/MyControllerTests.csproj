@@ -37,7 +37,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyControllerTests.cs" />
+    <Compile Include="Fakes\Stacks\FullStack.cs" />
+    <Compile Include="ControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +47,12 @@
     <Content Include="lib\Castle.DynamicProxy2.dll" />
     <Content Include="lib\license.txt" />
     <Content Include="lib\Rhino.Mocks.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyController\MyController.csproj">
+      <Project>{06548868-897B-484F-8640-63F596472B1F}</Project>
+      <Name>MyController</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
