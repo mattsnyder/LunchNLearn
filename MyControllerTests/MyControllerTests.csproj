@@ -37,6 +37,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fakes\Stacks\DumbStack.cs" />
     <Compile Include="Fakes\Stacks\FullStack.cs" />
     <Compile Include="ControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

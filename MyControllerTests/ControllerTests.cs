@@ -1,6 +1,7 @@
 
 using ControllerTests.Fakes.Stacks;
 using MyController;
+using MyControllerTests.Fakes.Stacks;
 using NUnit.Framework;
 using Rhino.Mocks;
 
@@ -25,6 +26,24 @@ namespace ControllerTests
                 Controller controller = new Controller(new FullStack(), mockedView);
                 controller.Save(5);
             }
+        }
+
+        [Test]
+        public void next_test()
+        {
+            MockRepository mocks = new MockRepository();
+            IView mockedView = mocks.CreateMock<IView>();
+
+            using (mocks.Record())
+            {
+                mockedView.WriteLine("value was pushed");
+            }
+            using (mocks.Playback())
+            {
+                Controller controller = new Controller(new DumbStack(), mockedView);
+                controller.Save(5);
+            }
+            
         }
     }
 

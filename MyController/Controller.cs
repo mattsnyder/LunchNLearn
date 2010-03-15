@@ -17,6 +17,7 @@ namespace MyController
             try
             {
                 _stack.Push(0);
+                _view.WriteLine("value was pushed");
             }
             catch (MyStackIsFullExcpetion)
             {
